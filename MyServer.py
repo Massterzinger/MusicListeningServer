@@ -59,7 +59,7 @@ class MyThread (Thread):
         else:
             FullPath = os.path.join(MusPath,pathX[1:])
             print(FullPath, pathX)
-            if ('.mp3' in pathX) or ('.m4a' in pathX):
+            if ('.mp3' in pathX) or ('.m4a' in pathX): #need to Check if requested file is a music file
                 resData = getBin(FullPath)
             elif ('.jpg' in pathX):
                 try:
