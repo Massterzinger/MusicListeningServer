@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MusicPage</title>
+    <link rel="stylesheet" href="/Content/1.css"/>
+    <script src="/Content/logic.js"></script>
+</head>
+<body onload="Load()">
+<div id="sidebar">
+    <div id="imgbar">
+        <img src= "{0}" width='100%'>    
+        <div id="Buttons" align=center>
+            <input value='Prev' type='button' onclick='SendMsgToServ()'>
+            <input value='Pause' type='button' onclick='SendMsgToServ()'>
+            <input value='Next' type='button' onclick='SendMsgToServ()'>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div id="folder">
+        <font size=5 color='#905050' face='arial'>
+        {1}
+        </font>
+    </div>
+    <div id="list">
+        <font size=4 color='#905050' face='arial'>
+        <ul>
+			{2}
+        </ul>
+        </font>
+    </div>
+</div>
+</body>
+</html>
